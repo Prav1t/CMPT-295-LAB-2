@@ -1,6 +1,7 @@
     .section .note.GNU-stack,""
     .global _start
     .text
+# Pravit Hundal, Student# 301637873
 
 do_something:
     push %rbx
@@ -11,7 +12,7 @@ loop_top:
     add %rcx, %rbx
     add $2, %rcx    
     cmp %rdi, %rbx
-    jl loop_top
+    jle loop_top
         
     mov %rbx, %rax
     pop %rbx
